@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Alle Coins – Live Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    th {
+      background-color: #f2f2f2;
+      position: sticky;
+      top: 0;
+    }
+    tbody {
+      max-height: 600px;
+      overflow-y: scroll;
+      display: block;
+    }
+    tr {
+      display: table;
+      width: 100%;
+      table-layout: fixed;
+    }
+  </style>
+</head>
+<body>
+  <h1>Live-Kurse aller Coins (CoinGecko)</h1>
+  <table id="coinTable">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Symbol</th>
+        <th>Preis (USD)</th>
+        <th>24h Änderung</th>
+        <th>Marktkapitalisierung</th>
+      </tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+  </table>
+
+  <script>
+    async function fetchCoins(page = 1) {
+      const url = `https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=250&page=${page}`;
+      const res = await fetch(url);
+      return res.json();
+    }
+
+    function formatUSD(num) {
+      return Number(num).toLocaleString("de-DE", {
+        style: "currency",
+        currency: "USD",
+        minimumFractionDigits: 2
+      });
+    }
+
+    async function loadAllCoins() {
+      const table = document.getElementById("tableBody");
+      table.innerHTML = "";
+      for (let page = 1; page <= 4; page++) {
+        const data = await fetchCoins(page);
+        data.forEach(coin => {
+          const row = document.createElement("tr");
+          row.innerHTML = `
+            <td>${coin.name}</td>
+            <td>${coin.symbol.toUpperCase()}</td>
+            <td>${formatUSD(coin.current_price)}</td>
+            <td style="color:${coin.price_change_percentage_24h >= 0 ? 'green' : 'red'}">
+              ${coin.price_change_percentage_24h?.toFixed(2)} %
+            </td>
+            <td>${formatUSD(coin.market_cap)}</td>
+          `;
+          table.appendChild(row);
+        });
+      }
+    }
+
+    loadAllCoins();
+    setInterval(loadAllCoins, 30000);
+  </script>
+</body>
+</html>
