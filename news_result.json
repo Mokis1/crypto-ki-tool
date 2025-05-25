@@ -1,10 +1,10 @@
 {
-  "sentiment_raw": "Sentiment: Neutral\n\nBegründung: Die Schlagzeilen in der Liste sind gemischt und enthalten sowohl positive als auch negative Nachrichten über die Krypto- und Finanzbranche. Während die Enthüllung eines Billionen-Dollar-Krypto-Ökosystems von MultiBank bullish ist, sind die Nachrichten über Scams und Kriminalität wie der Betrug bei der Bank of America und der Anstieg des Darknet-Krypto-Handels in Russland bearish. Die neutralen Schlagzeilen über die PEPE-Preisanalyse und Microsofts Verwendung von KI für das Codieren haben keinen direkten Einfluss auf das Gesamt-Sentiment.",
+  "sentiment_raw": "Sentiment: neutral\n\nBegründung: Die Schlagzeilen in der Liste sind gemischt und decken verschiedene Aspekte des Kryptowährungsmarktes ab. Einige sind positiv (wie die Vorstellung eines neuen Milliarden-Dollar-Krypto-Ökosystems), während andere negative Aspekte (wie den Betrug eines Bankkontos) oder neutrale Entwicklungen (wie die Preisanalyse einer bestimmten Kryptowährung) behandeln. Insgesamt lässt sich daher kein eindeutiges bullishes oder bearishes Sentiment ableiten.",
   "titles": [
+    "3 Reasons Why Fartcoin Could Be Worth Buying",
     "Scammer Drains $5,050 From Bank of America Account – Why the Bank Says Reimbursement Is Not Happening: Report",
     "MultiBank Unveils Billion-Dollar Crypto Ecosystem",
     "PEPE Price Analysis: Momentum Cools After Strong Monthly Rally",
-    "Microsoft Turns GitHub Copilot Into Full AI Coding Agent",
-    "Russia’s ‘Kraken’ Darknet Crypto Sales Surge 68% in 2024"
+    "Microsoft Turns GitHub Copilot Into Full AI Coding Agent"
   ]
 }
