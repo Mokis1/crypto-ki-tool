@@ -1,0 +1,40 @@
+name: Update Crypto Data
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # jede Stunde
+  workflow_dispatch:     # manuell startbar
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: 📥 Checkout Repository
+      uses: actions/checkout@v3
+
+    - name: 📦 Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: 📦 Install requirements
+      run: |
+        pip install -r requirements.txt
+
+    - name: ⚙️ Run Update Scripts
+      env:
+        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      run: |
+        python gpt_news_live.py
+        python gpt_coin_sentiment.py
+        python whale_scraper.py
+        python generate_heatmap.py
+
+    - name: ✅ Commit updated JSON files
+      run: |
+        git config user.name "GitHub Actions"
+        git config user.email "actions@github.com"
+        git add *.json
+        git commit -m "🔁 Auto-Update: JSON-Daten neu generiert" || echo "Nichts zu committen"
+        git push
