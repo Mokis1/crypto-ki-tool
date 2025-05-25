@@ -1,0 +1,5 @@
+[
+  { "symbol": "btc", "change": 2.45 },
+  { "symbol": "eth", "change": -1.23 },
+  { "symbol": "xrp", "change": 0.12 }
+]
