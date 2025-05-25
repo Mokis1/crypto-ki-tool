@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>GPT Newsanalyse</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 30px; max-width: 700px; margin: auto; }
+    h1 { color: #444; }
+    .sentiment { font-size: 1.5em; margin: 20px 0; }
+    .bullish { color: green; }
+    .bearish { color: red; }
+    .neutral { color: gray; }
+    .title-list li { margin-bottom: 6px; }
+  </style>
+</head>
+<body>
+  <h1>🧠 GPT Marktanalyse</h1>
+  <div id="output">Lade News...</div>
+
+  <script>
+    async function loadGPTNews() {
+      try {
+        const res = await fetch('news_result.json');
+        const data = await res.json();
+
+        let sentimentClass = 'neutral';
+        if (data.sentiment_raw.toLowerCase().includes('bullish')) sentimentClass = 'bullish';
+        if (data.sentiment_raw.toLowerCase().includes('bearish')) sentimentClass = 'bearish';
+
+        document.getElementById("output").innerHTML = `
+          <div class="sentiment ${sentimentClass}">
+            <strong>${data.sentiment_raw}</strong>
+          </div>
+          <h3>Analysierte Headlines:</h3>
+          <ul class="title-list">
+            ${data.titles.map(title => `<li>📰 ${title}</li>`).join("")}
+          </ul>
+        `;
+      } catch (err) {
+        document.getElementById("output").innerText = "Fehler beim Laden der Daten.";
+        console.error(err);
+      }
+    }
+
+    loadGPTNews();
+  </script>
+</body>
+</html>
