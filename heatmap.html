@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Coin Heatmap</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #00ffcc;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .tile {
+      padding: 10px;
+      border-radius: 8px;
+      text-align: center;
+      font-weight: bold;
+      color: #000;
+    }
+
+    .pos {
+      background-color: #00ff88;
+    }
+
+    .neg {
+      background-color: #ff4b4b;
+    }
+
+    .neu {
+      background-color: #888;
+      color: #fff;
+    }
+
+    .tile small {
+      display: block;
+      font-size: 0.9em;
+      color: #111;
+    }
+  </style>
+</head>
+<body>
+  <h2>📊 Coin Heatmap (24h Change)</h2>
+  <div id="heatmap" class="grid">Lade...</div>
+
+  <script>
+    async function loadHeatmap() {
+      const res = await fetch("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=30&page=1");
+      const data = await res.json();
+      const container = document.getElementById("heatmap");
+      container.innerHTML = "";
+
+      data.forEach(coin => {
+        const change = coin.price_change_percentage_24h;
+        let cls = "neu";
+        if (change > 0.5) cls = "pos";
+        else if (change < -0.5) cls = "neg";
+
+        const tile = document.createElement("div");
+        tile.className = `tile ${cls}`;
+        tile.innerHTML = `
+          ${coin.symbol.toUpperCase()}<br>
+          <small>${change?.toFixed(2)}%</small>
+        `;
+        container.appendChild(tile);
+      });
+    }
+
+    loadHeatmap();
+  </script>
+</body>
+</html>
