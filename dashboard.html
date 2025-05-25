@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Crypto Live Dashboard</title>
+    <meta charset="UTF-8" />
+    <style>
+      body { font-family: Arial; padding: 20px; }
+      table { border-collapse: collapse; width: 300px; }
+      td, th { border: 1px solid #ddd; padding: 8px; }
+    </style>
+  </head>
+  <body>
+    <h2>Live-Preise</h2>
+    <table>
+      <thead>
+        <tr><th>Coin</th><th>Preis (USD)</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Bitcoin (BTC)</td><td id="btc">...</td></tr>
+        <tr><td>Ethereum (ETH)</td><td id="eth">...</td></tr>
+      </tbody>
+    </table>
+
+    <script>
+      async function getPrice(coinId, elementId) {
+        const res = await fetch(`https://api.coingecko.com/api/v3/simple/price?ids=${coinId}&vs_currencies=usd`);
+        const data = await res.json();
+        document.getElementById(elementId).innerText = data[coinId].usd + " $";
+      }
+
+      setInterval(() => {
+        getPrice("bitcoin", "btc");
+        getPrice("ethereum", "eth");
+      }, 5000);
+
+      getPrice("bitcoin", "btc");
+      getPrice("ethereum", "eth");
+    </script>
+  </body>
+</html>
