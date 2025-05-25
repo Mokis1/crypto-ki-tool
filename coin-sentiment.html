@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>GPT pro Coin</title>
+  <style>
+    body {
+      background: #121212;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    h2 {
+      text-align: center;
+      color: #00ffcc;
+    }
+    .card {
+      background: #1e1e1e;
+      border: 1px solid #333;
+      margin: 15px 0;
+      padding: 15px;
+      border-radius: 8px;
+    }
+    .card h3 {
+      margin: 0;
+      font-size: 1.2em;
+      color: #00ffcc;
+    }
+    .bullish { color: #00ff88; }
+    .neutral { color: #ccc; }
+    .bearish { color: #ff4b4b; }
+    .gpt { margin-top: 8px; }
+  </style>
+</head>
+<body>
+  <h2>🧠 GPT-Stimmungsanalyse je Coin</h2>
+  <div id="content">Lade...</div>
+
+  <script>
+    async function loadSentiment() {
+      const res = await fetch("coin_sentiment.json");
+      const data = await res.json();
+      const container = document.getElementById("content");
+      container.innerHTML = "";
+
+      for (const [coin, entry] of Object.entries(data)) {
+        let cls = "neutral";
+        if (/bullish/i.test(entry.gpt)) cls = "bullish";
+        else if (/bearish/i.test(entry.gpt)) cls = "bearish";
+
+        const card = document.createElement("div");
+        card.className = "card";
+
+        card.innerHTML = `
+          <h3>${coin}</h3>
+          <div class="gpt ${cls}">${entry.gpt}</div>
+        `;
+
+        container.appendChild(card);
+      }
+    }
+
+    loadSentiment();
+  </script>
+</body>
+</html>
