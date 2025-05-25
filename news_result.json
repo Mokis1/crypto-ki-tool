@@ -1,10 +1,10 @@
 {
-  "sentiment_raw": "Sentiment: Bearish\n\nBegründung: Die Schlagzeilen enthalten gemischte Informationen, darunter die potenzielle Gefahr für XRP im Vergleich zu Bitcoin, die Unsicherheit über US-Zollabkommen und Skepsis über die Verlagerung der iPhone-Produktion in die USA. In Kombination wirken diese Nachrichten eher negativ und könnten eine zögerliche Haltung gegenüber Kryptowährungen und den Marktaussichten insgesamt widerspiegeln.",
+  "sentiment_raw": "Sentiment: Neutral\n\nBegründung: Die Schlagzeilen in der Liste sind gemischt und enthalten sowohl positive als auch negative Nachrichten über die Krypto- und Finanzbranche. Während die Enthüllung eines Billionen-Dollar-Krypto-Ökosystems von MultiBank bullish ist, sind die Nachrichten über Scams und Kriminalität wie der Betrug bei der Bank of America und der Anstieg des Darknet-Krypto-Handels in Russland bearish. Die neutralen Schlagzeilen über die PEPE-Preisanalyse und Microsofts Verwendung von KI für das Codieren haben keinen direkten Einfluss auf das Gesamt-Sentiment.",
   "titles": [
-    "Tether Holds $152.5B U.S. Treasuries, $13B Profits, Expands in Emerging Markets Amid U.S. Genius Act and EU MiCA Rules",
-    "Moving Apple iPhone Manufacturing to US a ‘Pinocchio Story,’ Says Investor Dan Ives – Here’s What He Means",
-    "Bitcoin Pizza Day: Billion Dollar Pizza Order!",
-    "South Korea’s leading presidential candidate wants more time on US tariff deal",
-    "XRP Risks Losing 28% Versus Bitcoin After Double Death Cross Forms"
+    "Scammer Drains $5,050 From Bank of America Account – Why the Bank Says Reimbursement Is Not Happening: Report",
+    "MultiBank Unveils Billion-Dollar Crypto Ecosystem",
+    "PEPE Price Analysis: Momentum Cools After Strong Monthly Rally",
+    "Microsoft Turns GitHub Copilot Into Full AI Coding Agent",
+    "Russia’s ‘Kraken’ Darknet Crypto Sales Surge 68% in 2024"
   ]
 }

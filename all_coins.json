@@ -1,0 +1,1802 @@
+[
+  {
+    "name": "Bitcoin",
+    "symbol": "BTC",
+    "price": 107200,
+    "market_cap": 2129855310714
+  },
+  {
+    "name": "Ethereum",
+    "symbol": "ETH",
+    "price": 2510.77,
+    "market_cap": 303076727749
+  },
+  {
+    "name": "Tether",
+    "symbol": "USDT",
+    "price": 1.0,
+    "market_cap": 152774692564
+  },
+  {
+    "name": "XRP",
+    "symbol": "XRP",
+    "price": 2.29,
+    "market_cap": 134249763587
+  },
+  {
+    "name": "BNB",
+    "symbol": "BNB",
+    "price": 665.13,
+    "market_cap": 97186570640
+  },
+  {
+    "name": "Solana",
+    "symbol": "SOL",
+    "price": 170.36,
+    "market_cap": 88628375224
+  },
+  {
+    "name": "USDC",
+    "symbol": "USDC",
+    "price": 0.9998,
+    "market_cap": 61703529588
+  },
+  {
+    "name": "Dogecoin",
+    "symbol": "DOGE",
+    "price": 0.2187,
+    "market_cap": 32661738847
+  },
+  {
+    "name": "Cardano",
+    "symbol": "ADA",
+    "price": 0.742,
+    "market_cap": 26758938946
+  },
+  {
+    "name": "TRON",
+    "symbol": "TRX",
+    "price": 0.271,
+    "market_cap": 25700894925
+  },
+  {
+    "name": "Lido Staked Ether",
+    "symbol": "STETH",
+    "price": 2509.27,
+    "market_cap": 22580951043
+  },
+  {
+    "name": "Wrapped Bitcoin",
+    "symbol": "WBTC",
+    "price": 106986,
+    "market_cap": 13789706433
+  },
+  {
+    "name": "Hyperliquid",
+    "symbol": "HYPE",
+    "price": 37.73,
+    "market_cap": 12601202359
+  },
+  {
+    "name": "Sui",
+    "symbol": "SUI",
+    "price": 3.49,
+    "market_cap": 11659979947
+  },
+  {
+    "name": "Wrapped stETH",
+    "symbol": "WSTETH",
+    "price": 3015.24,
+    "market_cap": 10535618574
+  },
+  {
+    "name": "Chainlink",
+    "symbol": "LINK",
+    "price": 14.99,
+    "market_cap": 9850096097
+  },
+  {
+    "name": "Avalanche",
+    "symbol": "AVAX",
+    "price": 22.24,
+    "market_cap": 9363531268
+  },
+  {
+    "name": "Stellar",
+    "symbol": "XLM",
+    "price": 0.2802,
+    "market_cap": 8719169875
+  },
+  {
+    "name": "Shiba Inu",
+    "symbol": "SHIB",
+    "price": 0.0,
+    "market_cap": 8300876356
+  },
+  {
+    "name": "LEO Token",
+    "symbol": "LEO",
+    "price": 8.91,
+    "market_cap": 8226572786
+  },
+  {
+    "name": "Bitcoin Cash",
+    "symbol": "BCH",
+    "price": 410.9,
+    "market_cap": 8164467934
+  },
+  {
+    "name": "Hedera",
+    "symbol": "HBAR",
+    "price": 0.1834,
+    "market_cap": 7743552854
+  },
+  {
+    "name": "Monero",
+    "symbol": "XMR",
+    "price": 412.61,
+    "market_cap": 7601545099
+  },
+  {
+    "name": "Toncoin",
+    "symbol": "TON",
+    "price": 2.94,
+    "market_cap": 7314799250
+  },
+  {
+    "name": "Litecoin",
+    "symbol": "LTC",
+    "price": 94.15,
+    "market_cap": 7143897137
+  },
+  {
+    "name": "WETH",
+    "symbol": "WETH",
+    "price": 2511.73,
+    "market_cap": 7114189991
+  },
+  {
+    "name": "Polkadot",
+    "symbol": "DOT",
+    "price": 4.41,
+    "market_cap": 6705418183
+  },
+  {
+    "name": "USDS",
+    "symbol": "USDS",
+    "price": 0.9998,
+    "market_cap": 6640717354
+  },
+  {
+    "name": "Bitget Token",
+    "symbol": "BGB",
+    "price": 5.31,
+    "market_cap": 6218137691
+  },
+  {
+    "name": "Wrapped eETH",
+    "symbol": "WEETH",
+    "price": 2682.52,
+    "market_cap": 6087671368
+  },
+  {
+    "name": "Binance Bridged USDT (BNB Smart Chain)",
+    "symbol": "BSC-USD",
+    "price": 0.9974,
+    "market_cap": 5991901452
+  },
+  {
+    "name": "Pi Network",
+    "symbol": "PI",
+    "price": 0.7691,
+    "market_cap": 5567681617
+  },
+  {
+    "name": "Pepe",
+    "symbol": "PEPE",
+    "price": 0.0,
+    "market_cap": 5425225350
+  },
+  {
+    "name": "Ethena USDe",
+    "symbol": "USDE",
+    "price": 1.002,
+    "market_cap": 5216045864
+  },
+  {
+    "name": "WhiteBIT Coin",
+    "symbol": "WBT",
+    "price": 32.22,
+    "market_cap": 4641005279
+  },
+  {
+    "name": "Coinbase Wrapped BTC",
+    "symbol": "CBBTC",
+    "price": 107134,
+    "market_cap": 4540700433
+  },
+  {
+    "name": "Aave",
+    "symbol": "AAVE",
+    "price": 262.43,
+    "market_cap": 3973495424
+  },
+  {
+    "name": "Dai",
+    "symbol": "DAI",
+    "price": 0.9999,
+    "market_cap": 3707593717
+  },
+  {
+    "name": "Bittensor",
+    "symbol": "TAO",
+    "price": 415.88,
+    "market_cap": 3626221377
+  },
+  {
+    "name": "Uniswap",
+    "symbol": "UNI",
+    "price": 6.03,
+    "market_cap": 3618726605
+  },
+  {
+    "name": "NEAR Protocol",
+    "symbol": "NEAR",
+    "price": 2.66,
+    "market_cap": 3247262283
+  },
+  {
+    "name": "Aptos",
+    "symbol": "APT",
+    "price": 5.05,
+    "market_cap": 3196818112
+  },
+  {
+    "name": "OKB",
+    "symbol": "OKB",
+    "price": 51.94,
+    "market_cap": 3116106079
+  },
+  {
+    "name": "Jito Staked SOL",
+    "symbol": "JITOSOL",
+    "price": 204.95,
+    "market_cap": 3102795655
+  },
+  {
+    "name": "BlackRock USD Institutional Digital Liquidity Fund",
+    "symbol": "BUIDL",
+    "price": 1.0,
+    "market_cap": 2922443478
+  },
+  {
+    "name": "Ondo",
+    "symbol": "ONDO",
+    "price": 0.9112,
+    "market_cap": 2876871307
+  },
+  {
+    "name": "Cronos",
+    "symbol": "CRO",
+    "price": 0.0942,
+    "market_cap": 2811719909
+  },
+  {
+    "name": "Ethereum Classic",
+    "symbol": "ETC",
+    "price": 17.98,
+    "market_cap": 2732188057
+  },
+  {
+    "name": "Kaspa",
+    "symbol": "KAS",
+    "price": 0.1033,
+    "market_cap": 2707886578
+  },
+  {
+    "name": "Internet Computer",
+    "symbol": "ICP",
+    "price": 5.06,
+    "market_cap": 2701706535
+  },
+  {
+    "name": "Ethena Staked USDe",
+    "symbol": "SUSDE",
+    "price": 1.17,
+    "market_cap": 2650005506
+  },
+  {
+    "name": "Tokenize Xchange",
+    "symbol": "TKX",
+    "price": 32.64,
+    "market_cap": 2610899211
+  },
+  {
+    "name": "Gate",
+    "symbol": "GT",
+    "price": 21.16,
+    "market_cap": 2567596617
+  },
+  {
+    "name": "Official Trump",
+    "symbol": "TRUMP",
+    "price": 12.45,
+    "market_cap": 2485235219
+  },
+  {
+    "name": "Mantle",
+    "symbol": "MNT",
+    "price": 0.7354,
+    "market_cap": 2473175132
+  },
+  {
+    "name": "Render",
+    "symbol": "RENDER",
+    "price": 4.54,
+    "market_cap": 2350158667
+  },
+  {
+    "name": "VeChain",
+    "symbol": "VET",
+    "price": 0.0265,
+    "market_cap": 2274539663
+  },
+  {
+    "name": "USD1",
+    "symbol": "USD1",
+    "price": 0.9974,
+    "market_cap": 2146877310
+  },
+  {
+    "name": "Artificial Superintelligence Alliance",
+    "symbol": "FET",
+    "price": 0.8031,
+    "market_cap": 2091647661
+  },
+  {
+    "name": "Cosmos Hub",
+    "symbol": "ATOM",
+    "price": 4.62,
+    "market_cap": 2081662684
+  },
+  {
+    "name": "Ethena",
+    "symbol": "ENA",
+    "price": 0.3558,
+    "market_cap": 2069456984
+  },
+  {
+    "name": "POL (ex-MATIC)",
+    "symbol": "POL",
+    "price": 0.2291,
+    "market_cap": 2042094828
+  },
+  {
+    "name": "Lombard Staked BTC",
+    "symbol": "LBTC",
+    "price": 106480,
+    "market_cap": 2024862993
+  },
+  {
+    "name": "Worldcoin",
+    "symbol": "WLD",
+    "price": 1.33,
+    "market_cap": 2022144580
+  },
+  {
+    "name": "sUSDS",
+    "symbol": "SUSDS",
+    "price": 1.053,
+    "market_cap": 1947305288
+  },
+  {
+    "name": "Fasttoken",
+    "symbol": "FTN",
+    "price": 4.41,
+    "market_cap": 1898447433
+  },
+  {
+    "name": "Arbitrum",
+    "symbol": "ARB",
+    "price": 0.3809,
+    "market_cap": 1851555566
+  },
+  {
+    "name": "Filecoin",
+    "symbol": "FIL",
+    "price": 2.76,
+    "market_cap": 1841256749
+  },
+  {
+    "name": "Algorand",
+    "symbol": "ALGO",
+    "price": 0.2135,
+    "market_cap": 1836182784
+  },
+  {
+    "name": "First Digital USD",
+    "symbol": "FDUSD",
+    "price": 1.004,
+    "market_cap": 1652380981
+  },
+  {
+    "name": "Celestia",
+    "symbol": "TIA",
+    "price": 2.47,
+    "market_cap": 1602660409
+  },
+  {
+    "name": "Jupiter Perpetuals Liquidity Provider Token",
+    "symbol": "JLP",
+    "price": 4.57,
+    "market_cap": 1586295743
+  },
+  {
+    "name": "Binance-Peg WETH",
+    "symbol": "WETH",
+    "price": 2503.01,
+    "market_cap": 1514562872
+  },
+  {
+    "name": "Bonk",
+    "symbol": "BONK",
+    "price": 0.0,
+    "market_cap": 1504069043
+  },
+  {
+    "name": "Jupiter",
+    "symbol": "JUP",
+    "price": 0.5143,
+    "market_cap": 1490219701
+  },
+  {
+    "name": "Binance Staked SOL",
+    "symbol": "BNSOL",
+    "price": 179.03,
+    "market_cap": 1486581744
+  },
+  {
+    "name": "KuCoin",
+    "symbol": "KCS",
+    "price": 11.19,
+    "market_cap": 1399246053
+  },
+  {
+    "name": "Sonic (prev. FTM)",
+    "symbol": "S",
+    "price": 0.4368,
+    "market_cap": 1386849983
+  },
+  {
+    "name": "Fartcoin",
+    "symbol": "FARTCOIN",
+    "price": 1.37,
+    "market_cap": 1365336180
+  },
+  {
+    "name": "Quant",
+    "symbol": "QNT",
+    "price": 92.89,
+    "market_cap": 1349339830
+  },
+  {
+    "name": "Stacks",
+    "symbol": "STX",
+    "price": 0.8564,
+    "market_cap": 1307938515
+  },
+  {
+    "name": "Kelp DAO Restaked ETH",
+    "symbol": "RSETH",
+    "price": 2623.63,
+    "market_cap": 1263014387
+  },
+  {
+    "name": "NEXO",
+    "symbol": "NEXO",
+    "price": 1.26,
+    "market_cap": 1255556874
+  },
+  {
+    "name": "Optimism",
+    "symbol": "OP",
+    "price": 0.7191,
+    "market_cap": 1232709790
+  },
+  {
+    "name": "Virtuals Protocol",
+    "symbol": "VIRTUAL",
+    "price": 1.87,
+    "market_cap": 1224381358
+  },
+  {
+    "name": "Injective",
+    "symbol": "INJ",
+    "price": 12.49,
+    "market_cap": 1220816801
+  },
+  {
+    "name": "Flare",
+    "symbol": "FLR",
+    "price": 0.0185,
+    "market_cap": 1209253563
+  },
+  {
+    "name": "Rocket Pool ETH",
+    "symbol": "RETH",
+    "price": 2852.27,
+    "market_cap": 1193319527
+  },
+  {
+    "name": "USDT0",
+    "symbol": "USDT0",
+    "price": 0.9995,
+    "market_cap": 1187541102
+  },
+  {
+    "name": "Story",
+    "symbol": "IP",
+    "price": 4.15,
+    "market_cap": 1160247911
+  },
+  {
+    "name": "Sei",
+    "symbol": "SEI",
+    "price": 0.2136,
+    "market_cap": 1138867708
+  },
+  {
+    "name": "Immutable",
+    "symbol": "IMX",
+    "price": 0.6092,
+    "market_cap": 1121942700
+  },
+  {
+    "name": "EOS",
+    "symbol": "EOS",
+    "price": 0.736,
+    "market_cap": 1116424050
+  },
+  {
+    "name": "XDC Network",
+    "symbol": "XDC",
+    "price": 0.0675,
+    "market_cap": 1094320050
+  },
+  {
+    "name": "dogwifhat",
+    "symbol": "WIF",
+    "price": 1.025,
+    "market_cap": 1023305187
+  },
+  {
+    "name": "Solv Protocol BTC",
+    "symbol": "SOLVBTC",
+    "price": 106938,
+    "market_cap": 1023226451
+  },
+  {
+    "name": "The Graph",
+    "symbol": "GRT",
+    "price": 0.1047,
+    "market_cap": 999231557
+  },
+  {
+    "name": "Curve DAO",
+    "symbol": "CRV",
+    "price": 0.7394,
+    "market_cap": 992938463
+  },
+  {
+    "name": "Maker",
+    "symbol": "MKR",
+    "price": 1617.65,
+    "market_cap": 976416366
+  },
+  {
+    "name": "Marinade Staked SOL",
+    "symbol": "MSOL",
+    "price": 220.29,
+    "market_cap": 928810411
+  },
+  {
+    "name": "Mantle Staked Ether",
+    "symbol": "METH",
+    "price": 2675.38,
+    "market_cap": 920260649
+  },
+  {
+    "name": "FLOKI",
+    "symbol": "FLOKI",
+    "price": 0.0001,
+    "market_cap": 900323324
+  },
+  {
+    "name": "PayPal USD",
+    "symbol": "PYUSD",
+    "price": 0.9993,
+    "market_cap": 899028282
+  },
+  {
+    "name": "Binance Bridged USDC (BNB Smart Chain)",
+    "symbol": "USDC",
+    "price": 0.9969,
+    "market_cap": 896791913
+  },
+  {
+    "name": "Arbitrum Bridged WBTC (Arbitrum One)",
+    "symbol": "WBTC",
+    "price": 107030,
+    "market_cap": 872784043
+  },
+  {
+    "name": "Jupiter Staked SOL",
+    "symbol": "JUPSOL",
+    "price": 188.93,
+    "market_cap": 856076705
+  },
+  {
+    "name": "Raydium",
+    "symbol": "RAY",
+    "price": 2.93,
+    "market_cap": 847499646
+  },
+  {
+    "name": "Renzo Restaked ETH",
+    "symbol": "EZETH",
+    "price": 2633.59,
+    "market_cap": 834822311
+  },
+  {
+    "name": "clBTC",
+    "symbol": "CLBTC",
+    "price": 107642,
+    "market_cap": 831233477
+  },
+  {
+    "name": "Wrapped BNB",
+    "symbol": "WBNB",
+    "price": 663.68,
+    "market_cap": 831175256
+  },
+  {
+    "name": "Polygon Bridged USDT (Polygon)",
+    "symbol": "USDT",
+    "price": 1.0,
+    "market_cap": 831073906
+  },
+  {
+    "name": "Tether Gold",
+    "symbol": "XAUT",
+    "price": 3366.41,
+    "market_cap": 829901169
+  },
+  {
+    "name": "Zcash",
+    "symbol": "ZEC",
+    "price": 51.49,
+    "market_cap": 827563395
+  },
+  {
+    "name": "Theta Network",
+    "symbol": "THETA",
+    "price": 0.8259,
+    "market_cap": 825862156
+  },
+  {
+    "name": "JasmyCoin",
+    "symbol": "JASMY",
+    "price": 0.017,
+    "market_cap": 821634311
+  },
+  {
+    "name": "PAX Gold",
+    "symbol": "PAXG",
+    "price": 3374.92,
+    "market_cap": 807582764
+  },
+  {
+    "name": "GALA",
+    "symbol": "GALA",
+    "price": 0.018,
+    "market_cap": 805782961
+  },
+  {
+    "name": "Core",
+    "symbol": "CORE",
+    "price": 0.794,
+    "market_cap": 795352529
+  },
+  {
+    "name": "StakeWise Staked ETH",
+    "symbol": "OSETH",
+    "price": 2629.3,
+    "market_cap": 781055232
+  },
+  {
+    "name": "SPX6900",
+    "symbol": "SPX",
+    "price": 0.8306,
+    "market_cap": 772232944
+  },
+  {
+    "name": "Pudgy Penguins",
+    "symbol": "PENGU",
+    "price": 0.0122,
+    "market_cap": 767627925
+  },
+  {
+    "name": "IOTA",
+    "symbol": "IOTA",
+    "price": 0.2016,
+    "market_cap": 762337849
+  },
+  {
+    "name": "Lido DAO",
+    "symbol": "LDO",
+    "price": 0.8455,
+    "market_cap": 758606774
+  },
+  {
+    "name": "PancakeSwap",
+    "symbol": "CAKE",
+    "price": 2.32,
+    "market_cap": 747059922
+  },
+  {
+    "name": "Helium",
+    "symbol": "HNT",
+    "price": 4.08,
+    "market_cap": 746607328
+  },
+  {
+    "name": "Pyth Network",
+    "symbol": "PYTH",
+    "price": 0.1276,
+    "market_cap": 732513571
+  },
+  {
+    "name": "The Sandbox",
+    "symbol": "SAND",
+    "price": 0.298,
+    "market_cap": 728660173
+  },
+  {
+    "name": "Ethereum Name Service",
+    "symbol": "ENS",
+    "price": 21.58,
+    "market_cap": 715347827
+  },
+  {
+    "name": "Bitcoin SV",
+    "symbol": "BSV",
+    "price": 35.99,
+    "market_cap": 715117815
+  },
+  {
+    "name": "BitTorrent",
+    "symbol": "BTT",
+    "price": 0.0,
+    "market_cap": 706654704
+  },
+  {
+    "name": "Pendle",
+    "symbol": "PENDLE",
+    "price": 4.34,
+    "market_cap": 704016069
+  },
+  {
+    "name": "DeXe",
+    "symbol": "DEXE",
+    "price": 12.27,
+    "market_cap": 699196869
+  },
+  {
+    "name": "Solv Protocol Staked BTC",
+    "symbol": "XSOLVBTC",
+    "price": 106368,
+    "market_cap": 684768190
+  },
+  {
+    "name": "Walrus",
+    "symbol": "WAL",
+    "price": 0.5174,
+    "market_cap": 680587689
+  },
+  {
+    "name": "Kaia",
+    "symbol": "KAIA",
+    "price": 0.1144,
+    "market_cap": 670032091
+  },
+  {
+    "name": "Stables Labs USDX",
+    "symbol": "USDX",
+    "price": 0.9999,
+    "market_cap": 666644505
+  },
+  {
+    "name": "THORChain",
+    "symbol": "RUNE",
+    "price": 1.87,
+    "market_cap": 655556441
+  },
+  {
+    "name": "OUSG",
+    "symbol": "OUSG",
+    "price": 111.17,
+    "market_cap": 636475455
+  },
+  {
+    "name": "Usual USD",
+    "symbol": "USD0",
+    "price": 0.9989,
+    "market_cap": 630730121
+  },
+  {
+    "name": "Tezos",
+    "symbol": "XTZ",
+    "price": 0.6014,
+    "market_cap": 628346261
+  },
+  {
+    "name": "Onyxcoin",
+    "symbol": "XCN",
+    "price": 0.0187,
+    "market_cap": 628112814
+  },
+  {
+    "name": "Jito",
+    "symbol": "JTO",
+    "price": 1.89,
+    "market_cap": 627276245
+  },
+  {
+    "name": "Polyhedra Network",
+    "symbol": "ZKJ",
+    "price": 2.03,
+    "market_cap": 625060566
+  },
+  {
+    "name": "Brett",
+    "symbol": "BRETT",
+    "price": 0.0625,
+    "market_cap": 619518994
+  },
+  {
+    "name": "Flow",
+    "symbol": "FLOW",
+    "price": 0.389,
+    "market_cap": 615632974
+  },
+  {
+    "name": "Ondo US Dollar Yield",
+    "symbol": "USDY",
+    "price": 1.09,
+    "market_cap": 583520226
+  },
+  {
+    "name": "Decentraland",
+    "symbol": "MANA",
+    "price": 0.3037,
+    "market_cap": 575652573
+  },
+  {
+    "name": "Grass",
+    "symbol": "GRASS",
+    "price": 2.05,
+    "market_cap": 564151564
+  },
+  {
+    "name": "L2 Standard Bridged WETH (Base)",
+    "symbol": "WETH",
+    "price": 2512.42,
+    "market_cap": 559424492
+  },
+  {
+    "name": "Binance-Peg Dogecoin",
+    "symbol": "DOGE",
+    "price": 0.218,
+    "market_cap": 558902387
+  },
+  {
+    "name": "Super OETH",
+    "symbol": "SUPEROETH",
+    "price": 2511.31,
+    "market_cap": 545128582
+  },
+  {
+    "name": "Avalanche Bridged BTC (Avalanche)",
+    "symbol": "BTC.B",
+    "price": 107182,
+    "market_cap": 543935691
+  },
+  {
+    "name": "cgETH Hashkey Cloud",
+    "symbol": "CGETH.HASHKEY",
+    "price": 2587.39,
+    "market_cap": 517036434
+  },
+  {
+    "name": "Ket",
+    "symbol": "KET",
+    "price": 0.5158,
+    "market_cap": 516633888
+  },
+  {
+    "name": "Mantle Restaked ETH",
+    "symbol": "CMETH",
+    "price": 2675.96,
+    "market_cap": 515798130
+  },
+  {
+    "name": "ApeCoin",
+    "symbol": "APE",
+    "price": 0.6298,
+    "market_cap": 503452119
+  },
+  {
+    "name": "Arbitrum Bridged WETH (Arbitrum One)",
+    "symbol": "WETH",
+    "price": 2512.2,
+    "market_cap": 495411812
+  },
+  {
+    "name": "AIOZ Network",
+    "symbol": "AIOZ",
+    "price": 0.4229,
+    "market_cap": 495397972
+  },
+  {
+    "name": "TrueUSD",
+    "symbol": "TUSD",
+    "price": 0.9984,
+    "market_cap": 494701098
+  },
+  {
+    "name": "tBTC",
+    "symbol": "TBTC",
+    "price": 107239,
+    "market_cap": 487235548
+  },
+  {
+    "name": "Dog (Bitcoin)",
+    "symbol": "DOG",
+    "price": 0.0049,
+    "market_cap": 486612800
+  },
+  {
+    "name": "MultiversX",
+    "symbol": "EGLD",
+    "price": 17.21,
+    "market_cap": 486219246
+  },
+  {
+    "name": "Maple Finance",
+    "symbol": "SYRUP",
+    "price": 0.4494,
+    "market_cap": 482087812
+  },
+  {
+    "name": "Reserve Rights",
+    "symbol": "RSR",
+    "price": 0.0083,
+    "market_cap": 478688531
+  },
+  {
+    "name": "Aerodrome Finance",
+    "symbol": "AERO",
+    "price": 0.5707,
+    "market_cap": 468824770
+  },
+  {
+    "name": "Starknet",
+    "symbol": "STRK",
+    "price": 0.1496,
+    "market_cap": 464913594
+  },
+  {
+    "name": "Arweave",
+    "symbol": "AR",
+    "price": 7.08,
+    "market_cap": 463489335
+  },
+  {
+    "name": "Wrapped HYPE",
+    "symbol": "WHYPE",
+    "price": 37.73,
+    "market_cap": 457871061
+  },
+  {
+    "name": "pumpBTC",
+    "symbol": "PUMPBTC",
+    "price": 104468,
+    "market_cap": 456535647
+  },
+  {
+    "name": "Bridged USDC (Polygon PoS Bridge)",
+    "symbol": "USDC.E",
+    "price": 0.9998,
+    "market_cap": 452463903
+  },
+  {
+    "name": "dYdX",
+    "symbol": "DYDX",
+    "price": 0.5803,
+    "market_cap": 450620862
+  },
+  {
+    "name": "NEO",
+    "symbol": "NEO",
+    "price": 6.31,
+    "market_cap": 445349786
+  },
+  {
+    "name": "KAITO",
+    "symbol": "KAITO",
+    "price": 1.84,
+    "market_cap": 444065102
+  },
+  {
+    "name": "Kava",
+    "symbol": "KAVA",
+    "price": 0.4073,
+    "market_cap": 441010848
+  },
+  {
+    "name": "Axie Infinity",
+    "symbol": "AXS",
+    "price": 2.73,
+    "market_cap": 440279859
+  },
+  {
+    "name": "Beldex",
+    "symbol": "BDX",
+    "price": 0.0613,
+    "market_cap": 438213619
+  },
+  {
+    "name": "Movement",
+    "symbol": "MOVE",
+    "price": 0.1719,
+    "market_cap": 438147009
+  },
+  {
+    "name": "DeepBook",
+    "symbol": "DEEP",
+    "price": 0.1745,
+    "market_cap": 436132120
+  },
+  {
+    "name": "Popcat",
+    "symbol": "POPCAT",
+    "price": 0.4439,
+    "market_cap": 434818043
+  },
+  {
+    "name": "Mog Coin",
+    "symbol": "MOG",
+    "price": 0.0,
+    "market_cap": 434526636
+  },
+  {
+    "name": "SyrupUSDC",
+    "symbol": "SYRUPUSDC",
+    "price": 1.1,
+    "market_cap": 433223001
+  },
+  {
+    "name": "Wormhole",
+    "symbol": "W",
+    "price": 0.0933,
+    "market_cap": 428976540
+  },
+  {
+    "name": "APENFT",
+    "symbol": "NFT",
+    "price": 0.0,
+    "market_cap": 428796581
+  },
+  {
+    "name": "eCash",
+    "symbol": "XEC",
+    "price": 0.0,
+    "market_cap": 426922435
+  },
+  {
+    "name": "Ronin",
+    "symbol": "RON",
+    "price": 0.6499,
+    "market_cap": 425242365
+  },
+  {
+    "name": "Conflux",
+    "symbol": "CFX",
+    "price": 0.0838,
+    "market_cap": 425008159
+  },
+  {
+    "name": "Saros",
+    "symbol": "SAROS",
+    "price": 0.1616,
+    "market_cap": 424148612
+  },
+  {
+    "name": "Telcoin",
+    "symbol": "TEL",
+    "price": 0.0046,
+    "market_cap": 422822125
+  },
+  {
+    "name": "Aethir",
+    "symbol": "ATH",
+    "price": 0.0464,
+    "market_cap": 421637597
+  },
+  {
+    "name": "Circle USYC",
+    "symbol": "USYC",
+    "price": 1.095,
+    "market_cap": 411081001
+  },
+  {
+    "name": "Staked HYPE",
+    "symbol": "STHYPE",
+    "price": 37.74,
+    "market_cap": 408735161
+  },
+  {
+    "name": "Chiliz",
+    "symbol": "CHZ",
+    "price": 0.0424,
+    "market_cap": 408170875
+  },
+  {
+    "name": "USDB",
+    "symbol": "USDB",
+    "price": 1.001,
+    "market_cap": 406268547
+  },
+  {
+    "name": "Eigenlayer",
+    "symbol": "EIGEN",
+    "price": 1.32,
+    "market_cap": 401679884
+  },
+  {
+    "name": "Mantle Bridged USDT (Mantle)",
+    "symbol": "USDT",
+    "price": 1.001,
+    "market_cap": 400945950
+  },
+  {
+    "name": "Akash Network",
+    "symbol": "AKT",
+    "price": 1.47,
+    "market_cap": 399579594
+  },
+  {
+    "name": "MimbleWimbleCoin",
+    "symbol": "MWC",
+    "price": 36.12,
+    "market_cap": 396625644
+  },
+  {
+    "name": "ether.fi Staked ETH",
+    "symbol": "EETH",
+    "price": 2510.22,
+    "market_cap": 394190781
+  },
+  {
+    "name": "Morpho",
+    "symbol": "MORPHO",
+    "price": 1.44,
+    "market_cap": 391906088
+  },
+  {
+    "name": "Amp",
+    "symbol": "AMP",
+    "price": 0.0046,
+    "market_cap": 384971255
+  },
+  {
+    "name": "Beam",
+    "symbol": "BEAM",
+    "price": 0.0073,
+    "market_cap": 384636626
+  },
+  {
+    "name": "Falcon USD",
+    "symbol": "USDF",
+    "price": 0.9996,
+    "market_cap": 380210793
+  },
+  {
+    "name": "MANTRA",
+    "symbol": "OM",
+    "price": 0.3925,
+    "market_cap": 378870130
+  },
+  {
+    "name": "Ether.fi",
+    "symbol": "ETHFI",
+    "price": 1.16,
+    "market_cap": 374608729
+  },
+  {
+    "name": "Plume",
+    "symbol": "PLUME",
+    "price": 0.1531,
+    "market_cap": 372385148
+  },
+  {
+    "name": "Compound",
+    "symbol": "COMP",
+    "price": 41.22,
+    "market_cap": 372187429
+  },
+  {
+    "name": "Sun Token",
+    "symbol": "SUN",
+    "price": 0.0193,
+    "market_cap": 371637386
+  },
+  {
+    "name": "Stader ETHx",
+    "symbol": "ETHX",
+    "price": 2653.26,
+    "market_cap": 368805931
+  },
+  {
+    "name": "Ether.fi Staked BTC",
+    "symbol": "EBTC",
+    "price": 106687,
+    "market_cap": 368157944
+  },
+  {
+    "name": "USDD",
+    "symbol": "USDD",
+    "price": 1.0,
+    "market_cap": 359805664
+  },
+  {
+    "name": "JUST",
+    "symbol": "JST",
+    "price": 0.0357,
+    "market_cap": 353068944
+  },
+  {
+    "name": "Polygon",
+    "symbol": "MATIC",
+    "price": 0.2292,
+    "market_cap": 347575802
+  },
+  {
+    "name": "Gnosis",
+    "symbol": "GNO",
+    "price": 131.3,
+    "market_cap": 346562690
+  },
+  {
+    "name": "Coinbase Wrapped Staked ETH",
+    "symbol": "CBETH",
+    "price": 2761.48,
+    "market_cap": 345543752
+  },
+  {
+    "name": "Polygon Bridged WBTC (Polygon POS)",
+    "symbol": "WBTC",
+    "price": 106978,
+    "market_cap": 344713405
+  },
+  {
+    "name": "SuperVerse",
+    "symbol": "SUPER",
+    "price": 0.7625,
+    "market_cap": 344234598
+  },
+  {
+    "name": "Trust Wallet",
+    "symbol": "TWT",
+    "price": 0.8236,
+    "market_cap": 343167436
+  },
+  {
+    "name": "Berachain",
+    "symbol": "BERA",
+    "price": 2.85,
+    "market_cap": 341321820
+  },
+  {
+    "name": "Turbo",
+    "symbol": "TURBO",
+    "price": 0.0049,
+    "market_cap": 338028327
+  },
+  {
+    "name": "Zebec Network",
+    "symbol": "ZBCN",
+    "price": 0.0042,
+    "market_cap": 335923518
+  },
+  {
+    "name": "Cheems Token",
+    "symbol": "CHEEMS",
+    "price": 0.0,
+    "market_cap": 335406914
+  },
+  {
+    "name": "cat in a dogs world",
+    "symbol": "MEW",
+    "price": 0.0038,
+    "market_cap": 335222748
+  },
+  {
+    "name": "Swell Ethereum",
+    "symbol": "SWETH",
+    "price": 2740.39,
+    "market_cap": 332534373
+  },
+  {
+    "name": "Axelar",
+    "symbol": "AXL",
+    "price": 0.3468,
+    "market_cap": 327278858
+  },
+  {
+    "name": "Terra Luna Classic",
+    "symbol": "LUNC",
+    "price": 0.0001,
+    "market_cap": 325455185
+  },
+  {
+    "name": "Binance-Peg BUSD",
+    "symbol": "BUSD",
+    "price": 1.0,
+    "market_cap": 323350016
+  },
+  {
+    "name": "Safe",
+    "symbol": "SAFE",
+    "price": 0.5484,
+    "market_cap": 318109139
+  },
+  {
+    "name": "Polygon PoS Bridged WETH (Polygon POS)",
+    "symbol": "WETH",
+    "price": 2512.06,
+    "market_cap": 317211774
+  },
+  {
+    "name": "Olympus",
+    "symbol": "OHM",
+    "price": 19.34,
+    "market_cap": 316788774
+  },
+  {
+    "name": "Legacy Frax Dollar",
+    "symbol": "FRAX",
+    "price": 0.9996,
+    "market_cap": 314818354
+  },
+  {
+    "name": "Ripple USD",
+    "symbol": "RLUSD",
+    "price": 1.0,
+    "market_cap": 310471586
+  },
+  {
+    "name": "Peanut the Squirrel",
+    "symbol": "PNUT",
+    "price": 0.3079,
+    "market_cap": 307559128
+  },
+  {
+    "name": "Wrapped AVAX",
+    "symbol": "WAVAX",
+    "price": 22.26,
+    "market_cap": 307207835
+  },
+  {
+    "name": "1inch",
+    "symbol": "1INCH",
+    "price": 0.2202,
+    "market_cap": 305261456
+  },
+  {
+    "name": "Keeta",
+    "symbol": "KTA",
+    "price": 0.7623,
+    "market_cap": 304354439
+  },
+  {
+    "name": "Frax Ether",
+    "symbol": "FRXETH",
+    "price": 2502.18,
+    "market_cap": 303662315
+  },
+  {
+    "name": "Creditcoin",
+    "symbol": "CTC",
+    "price": 0.6702,
+    "market_cap": 301176260
+  },
+  {
+    "name": "Liquid Staked ETH",
+    "symbol": "LSETH",
+    "price": 2714.15,
+    "market_cap": 299560644
+  },
+  {
+    "name": "Mina Protocol",
+    "symbol": "MINA",
+    "price": 0.2399,
+    "market_cap": 295776002
+  },
+  {
+    "name": "Kusama",
+    "symbol": "KSM",
+    "price": 17.73,
+    "market_cap": 293299136
+  },
+  {
+    "name": "ai16z",
+    "symbol": "AI16Z",
+    "price": 0.2674,
+    "market_cap": 293078972
+  },
+  {
+    "name": "Bybit Staked SOL",
+    "symbol": "BBSOL",
+    "price": 184.51,
+    "market_cap": 292119076
+  },
+  {
+    "name": "LayerZero",
+    "symbol": "ZRO",
+    "price": 2.58,
+    "market_cap": 286392952
+  },
+  {
+    "name": "Dash",
+    "symbol": "DASH",
+    "price": 22.96,
+    "market_cap": 281569958
+  },
+  {
+    "name": "Global Dollar",
+    "symbol": "USDG",
+    "price": 0.9997,
+    "market_cap": 278298388
+  },
+  {
+    "name": "cWBTC",
+    "symbol": "CWBTC",
+    "price": 2152.53,
+    "market_cap": 276906077
+  },
+  {
+    "name": "Drift Staked SOL",
+    "symbol": "DSOL",
+    "price": 189.79,
+    "market_cap": 276880587
+  },
+  {
+    "name": "Frax (prev. FXS)",
+    "symbol": "FRAX",
+    "price": 3.04,
+    "market_cap": 275481961
+  },
+  {
+    "name": "SafePal",
+    "symbol": "SFP",
+    "price": 0.5428,
+    "market_cap": 271403222
+  },
+  {
+    "name": "Arkham",
+    "symbol": "ARKM",
+    "price": 0.6356,
+    "market_cap": 269212386
+  },
+  {
+    "name": "aBTC",
+    "symbol": "ABTC",
+    "price": 106768,
+    "market_cap": 268931960
+  },
+  {
+    "name": "Aave USDC (Sonic)",
+    "symbol": "ASONUSDC",
+    "price": 0.9999,
+    "market_cap": 268498454
+  },
+  {
+    "name": "Baby Doge Coin",
+    "symbol": "BABYDOGE",
+    "price": 0.0,
+    "market_cap": 268142104
+  },
+  {
+    "name": "Toshi",
+    "symbol": "TOSHI",
+    "price": 0.0006,
+    "market_cap": 267777749
+  },
+  {
+    "name": "BENQI Liquid Staked AVAX",
+    "symbol": "SAVAX",
+    "price": 26.88,
+    "market_cap": 264596053
+  },
+  {
+    "name": "Resolv USR",
+    "symbol": "USR",
+    "price": 1.0,
+    "market_cap": 263876755
+  },
+  {
+    "name": "Notcoin",
+    "symbol": "NOT",
+    "price": 0.0025,
+    "market_cap": 256154516
+  },
+  {
+    "name": "Golem",
+    "symbol": "GLM",
+    "price": 0.2554,
+    "market_cap": 255432929
+  },
+  {
+    "name": "Synthetix Network",
+    "symbol": "SNX",
+    "price": 0.7468,
+    "market_cap": 253501327
+  },
+  {
+    "name": "Theta Fuel",
+    "symbol": "TFUEL",
+    "price": 0.0365,
+    "market_cap": 253395567
+  },
+  {
+    "name": "MX",
+    "symbol": "MX",
+    "price": 2.68,
+    "market_cap": 252951273
+  },
+  {
+    "name": "GHO",
+    "symbol": "GHO",
+    "price": 0.9989,
+    "market_cap": 251556430
+  },
+  {
+    "name": "Treehouse ETH",
+    "symbol": "TETH",
+    "price": 3017.26,
+    "market_cap": 249826485
+  },
+  {
+    "name": "Convex Finance",
+    "symbol": "CVX",
+    "price": 3.03,
+    "market_cap": 248223252
+  },
+  {
+    "name": "Decred",
+    "symbol": "DCR",
+    "price": 14.45,
+    "market_cap": 242990641
+  },
+  {
+    "name": "Infrared Bera",
+    "symbol": "IBERA",
+    "price": 2.82,
+    "market_cap": 238860243
+  },
+  {
+    "name": "Zilliqa",
+    "symbol": "ZIL",
+    "price": 0.0122,
+    "market_cap": 237618669
+  },
+  {
+    "name": "Moo Deng",
+    "symbol": "MOODENG",
+    "price": 0.2396,
+    "market_cap": 237044438
+  },
+  {
+    "name": "BTSE Token",
+    "symbol": "BTSE",
+    "price": 1.46,
+    "market_cap": 235896698
+  },
+  {
+    "name": "EURC",
+    "symbol": "EURC",
+    "price": 1.14,
+    "market_cap": 235689193
+  },
+  {
+    "name": "Blur",
+    "symbol": "BLUR",
+    "price": 0.1002,
+    "market_cap": 235422772
+  },
+  {
+    "name": "Moca Network",
+    "symbol": "MOCA",
+    "price": 0.0872,
+    "market_cap": 233218773
+  },
+  {
+    "name": "Staked Frax Ether",
+    "symbol": "SFRXETH",
+    "price": 2818.08,
+    "market_cap": 233105676
+  },
+  {
+    "name": "Trip",
+    "symbol": "TRIP",
+    "price": 7.82,
+    "market_cap": 229869874
+  },
+  {
+    "name": "Qtum",
+    "symbol": "QTUM",
+    "price": 2.16,
+    "market_cap": 228704613
+  },
+  {
+    "name": "Snek",
+    "symbol": "SNEK",
+    "price": 0.0031,
+    "market_cap": 228516272
+  },
+  {
+    "name": "Oasis",
+    "symbol": "ROSE",
+    "price": 0.0309,
+    "market_cap": 228357062
+  },
+  {
+    "name": "Nervos Network",
+    "symbol": "CKB",
+    "price": 0.0049,
+    "market_cap": 227508389
+  },
+  {
+    "name": "OriginTrail",
+    "symbol": "TRAC",
+    "price": 0.4501,
+    "market_cap": 224827981
+  },
+  {
+    "name": "OpenEden OpenDollar",
+    "symbol": "USDO",
+    "price": 1.004,
+    "market_cap": 223946275
+  },
+  {
+    "name": "ZKsync",
+    "symbol": "ZK",
+    "price": 0.0606,
+    "market_cap": 222629993
+  },
+  {
+    "name": "Bridged Ether (StarkGate)",
+    "symbol": "ETH",
+    "price": 2508.68,
+    "market_cap": 221792185
+  },
+  {
+    "name": "Astar",
+    "symbol": "ASTR",
+    "price": 0.0287,
+    "market_cap": 219696517
+  },
+  {
+    "name": "Gigachad",
+    "symbol": "GIGA",
+    "price": 0.0228,
+    "market_cap": 219071996
+  },
+  {
+    "name": "Compounding OpenDollar",
+    "symbol": "CUSDO",
+    "price": 1.02,
+    "market_cap": 217556888
+  },
+  {
+    "name": "VeThor",
+    "symbol": "VTHO",
+    "price": 0.0024,
+    "market_cap": 216614798
+  },
+  {
+    "name": "ETHPlus",
+    "symbol": "ETH+",
+    "price": 2633.99,
+    "market_cap": 214127557
+  },
+  {
+    "name": "SwissBorg",
+    "symbol": "BORG",
+    "price": 0.2172,
+    "market_cap": 213575042
+  },
+  {
+    "name": "0x Protocol",
+    "symbol": "ZRX",
+    "price": 0.2513,
+    "market_cap": 213232620
+  },
+  {
+    "name": "Livepeer",
+    "symbol": "LPT",
+    "price": 5.19,
+    "market_cap": 212021691
+  },
+  {
+    "name": "Polygon PoS Bridged DAI (Polygon POS)",
+    "symbol": "DAI",
+    "price": 0.9998,
+    "market_cap": 211995663
+  },
+  {
+    "name": "Venom",
+    "symbol": "VENOM",
+    "price": 0.102,
+    "market_cap": 211898803
+  },
+  {
+    "name": "Neiro",
+    "symbol": "NEIRO",
+    "price": 0.0005,
+    "market_cap": 211790393
+  },
+  {
+    "name": "Verus",
+    "symbol": "VRSC",
+    "price": 2.67,
+    "market_cap": 210783646
+  },
+  {
+    "name": "Gas",
+    "symbol": "GAS",
+    "price": 3.22,
+    "market_cap": 209761956
+  },
+  {
+    "name": "Basic Attention",
+    "symbol": "BAT",
+    "price": 0.14,
+    "market_cap": 209340231
+  },
+  {
+    "name": "Celo",
+    "symbol": "CELO",
+    "price": 0.3615,
+    "market_cap": 206279098
+  },
+  {
+    "name": "Solayer",
+    "symbol": "LAYER",
+    "price": 0.9827,
+    "market_cap": 206212565
+  },
+  {
+    "name": "ZetaChain",
+    "symbol": "ZETA",
+    "price": 0.2441,
+    "market_cap": 202347901
+  },
+  {
+    "name": "ORDI",
+    "symbol": "ORDI",
+    "price": 9.64,
+    "market_cap": 202075018
+  }
+]

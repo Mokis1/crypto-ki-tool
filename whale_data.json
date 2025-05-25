@@ -1,4 +1,17 @@
 [
-  { "asset": "BTC", "amount": 1500, "to": "Binance" },
-  { "asset": "ETH", "amount": 23000, "to": "Unknown wallet" }
+  {
+    "coin": "BTC",
+    "amount": 1500,
+    "to": "Binance"
+  },
+  {
+    "coin": "ETH",
+    "amount": 23000,
+    "to": "Unknown wallet"
+  },
+  {
+    "coin": "USDT",
+    "amount": 50000000,
+    "to": "Kraken"
+  }
 ]
