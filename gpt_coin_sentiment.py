@@ -1,57 +1,34 @@
-import requests
+# gpt_coin_sentiment.py
+import openai
 import json
-from openai import OpenAI
+import os
 
-OPENAI_API_KEY = "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"
-GPT_MODEL = "gpt-3.5-turbo"
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
-client = OpenAI(api_key=OPENAI_API_KEY)
+coins = ["BTC", "ETH", "SOL", "XRP"]
+prompts = {
+    "BTC": "Gib eine kurze Marktanalyse zu Bitcoin (BTC) basierend auf aktuellen Entwicklungen. Ist die Stimmung bullish, neutral oder bearish?",
+    "ETH": "Gib eine kurze Marktanalyse zu Ethereum (ETH) basierend auf aktuellen Entwicklungen. Ist die Stimmung bullish, neutral oder bearish?",
+    "SOL": "Gib eine kurze Marktanalyse zu Solana (SOL) basierend auf aktuellen Entwicklungen. Ist die Stimmung bullish, neutral oder bearish?",
+    "XRP": "Gib eine kurze Marktanalyse zu XRP basierend auf aktuellen Entwicklungen. Ist die Stimmung bullish, neutral oder bearish?"
+}
 
-COINS = ["bitcoin", "ethereum", "solana", "xrp", "dogecoin"]
-VS_CURRENCY = "usd"
-
-def get_news_for_coin(coin):
-    url = f"https://api.coingecko.com/api/v3/coins/{coin}/status_updates"
+results = {}
+for coin in coins:
     try:
-        response = requests.get(url)
-        response.raise_for_status()
-        data = response.json()
-        titles = [entry["description"] for entry in data.get("status_updates", [])[:3]]
-        return titles
-    except Exception as e:
-        return [f"No news found for {coin}"]
-
-def analyze_coin_with_gpt(coin, titles):
-    prompt = (
-        f"Analyze the following news headlines about {coin.upper()} and provide a sentiment "
-        f"(bullish, neutral, or bearish) with a short explanation:\n\n"
-        + "\n".join([f"- {t}" for t in titles])
-    )
-
-    try:
-        res = client.chat.completions.create(
-            model=GPT_MODEL,
-            messages=[{"role": "user", "content": prompt}]
+        response = openai.ChatCompletion.create(
+            model="gpt-3.5-turbo",
+            messages=[
+                {"role": "user", "content": prompts[coin]}
+            ]
         )
-        return res.choices[0].message.content
+        text = response["choices"][0]["message"]["content"].strip()
+        results[coin] = {"gpt": text}
     except Exception as e:
-        return "Sentiment: unknown – GPT error."
+        results[coin] = {"gpt": f"Fehler bei GPT: {str(e)}"}
 
-def main():
-    result = {}
-    for coin in COINS:
-        titles = get_news_for_coin(coin)
-        sentiment = analyze_coin_with_gpt(coin, titles)
-        result[coin.upper()] = {
-            "news": titles,
-            "gpt": sentiment
-        }
+with open("coin_sentiment.json", "w", encoding="utf-8") as f:
+    json.dump(results, f, indent=2, ensure_ascii=False)
 
-    with open("coin_sentiment.json", "w", encoding="utf-8") as f:
-        json.dump(result, f, indent=2, ensure_ascii=False)
-
-    print("✅ Datei coin_sentiment.json wurde erstellt.")
-
-if __name__ == "__main__":
-    main()
+print("✅ coin_sentiment.json aktualisiert")
 
