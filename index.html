@@ -6,10 +6,15 @@
   <link rel="stylesheet" href="style.css">
   <style>
     body { background: #111; color: #eee; font-family: sans-serif; margin: 0; padding: 0; }
-    h1 { text-align: center; padding: 20px; }
-    .section { background: #00ffe0; color: black; padding: 10px 20px; font-weight: bold; cursor: pointer; margin: 20px; border-radius: 5px; }
-    .content { background: #222; padding: 20px; margin: 0 20px 20px 20px; border-radius: 5px; display: none; }
-    pre { white-space: pre-wrap; word-wrap: break-word; }
+    h1 { text-align: center; padding: 20px; background-color: #00ffe0; color: #111; margin-bottom: 0; border-bottom: 4px solid #0cf; }
+    .section { background: #00ffe0; color: black; padding: 10px 20px; font-weight: bold; cursor: pointer; margin: 20px; border-radius: 5px; transition: background 0.3s ease; }
+    .section:hover { background: #0cf; }
+    .content { background: #222; padding: 20px; margin: -10px 20px 20px 20px; border-radius: 5px; display: none; box-shadow: 0 0 8px rgba(0,255,255,0.3); }
+    b { color: #0ff; }
+    pre { white-space: pre-wrap; word-wrap: break-word; color: #eee; font-size: 15px; background: #000; padding: 10px; border-radius: 5px; overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+    th, td { padding: 8px; border-bottom: 1px solid #555; text-align: left; }
+    th { background-color: #333; }
   </style>
 </head>
 <body>
@@ -26,6 +31,12 @@
 
   <div class="section" onclick="toggle('heatmap')">🔋 Coin-Heatmap</div>
   <div id="heatmap" class="content"></div>
+
+  <div class="section" onclick="toggle('feed')">🔤 GPT Newsfeed (pro Artikel)</div>
+  <div id="feed" class="content"></div>
+
+  <div class="section" onclick="toggle('coindata')">📈 Live Coin Daten (Top 250)</div>
+  <div id="coindata" class="content"></div>
 
   <script>
     function toggle(id) {
@@ -64,6 +75,22 @@
           html += `<b>${coin}</b>: ${data[coin]}%<br>`;
         }
         document.getElementById('heatmap').innerHTML = html;
+      });
+
+    fetch('gpt_news_feed.json')
+      .then(r => r.json())
+      .then(data => {
+        let html = '<ul>' + data.map(n => `<li><b>${n.sentiment}</b>: ${n.title}</li>`).join('') + '</ul>';
+        document.getElementById('feed').innerHTML = html;
+      });
+
+    fetch('all_coins.json')
+      .then(r => r.json())
+      .then(data => {
+        let html = '<table><thead><tr><th>Name</th><th>Symbol</th><th>Preis ($)</th><th>Marktkapitalisierung</th></tr></thead><tbody>';
+        html += data.map(c => `<tr><td>${c.name}</td><td>${c.symbol}</td><td>${c.price}</td><td>${c.market_cap.toLocaleString()}</td></tr>`).join('');
+        html += '</tbody></table>';
+        document.getElementById('coindata').innerHTML = html;
       });
   </script>
 </body>
