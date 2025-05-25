@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Crypto KI Dashboard</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
@@ -13,53 +13,70 @@
 
   <main>
     <section class="accordion">
-      <button class="accordion-btn">🧠 GPT-Newsanalyse</button>
-      <div class="accordion-content">
-        <iframe src="gpt-news.html" width="100%" height="400" frameborder="0"></iframe>
-      </div>
+      <button class="accordion-btn" data-src="gpt-news.json" data-type="news">🧠 GPT-Newsanalyse</button>
+      <div class="accordion-content"></div>
 
-      <button class="accordion-btn">📈 BTC/ETH Mini-Dashboard</button>
-      <div class="accordion-content">
-        <iframe src="dashboard.html" width="100%" height="400" frameborder="0"></iframe>
-      </div>
+      <button class="accordion-btn" data-src="coin_sentiment.json" data-type="sentiment">🧠 GPT pro Coin</button>
+      <div class="accordion-content"></div>
 
-      <button class="accordion-btn">📊 Coin-Dashboard (Top-Coins)</button>
-      <div class="accordion-content">
-        <iframe src="all-coins.html" width="100%" height="500" frameborder="0"></iframe>
-      </div>
+      <button class="accordion-btn" data-src="whale_data.json" data-type="whales">🐋 Whale-Tracking</button>
+      <div class="accordion-content"></div>
 
-      <button class="accordion-btn">🐋 Whale-Tracking</button>
-      <div class="accordion-content">
-        <iframe src="whale.html" width="100%" height="400" frameborder="0"></iframe>
-      </div>
-
-      <button class="accordion-btn">🌡️ Coin-Heatmap</button>
-      <div class="accordion-content">
-        <iframe src="heatmap.html" width="100%" height="500" frameborder="0"></iframe>
-      </div>
-
-      <button class="accordion-btn">🧠 GPT pro Coin</button>
-      <div class="accordion-content">
-        <iframe src="coin-sentiment.html" width="100%" height="500" frameborder="0"></iframe>
-      </div>
+      <button class="accordion-btn" data-src="heatmap_data.json" data-type="heatmap">🌡️ Coin-Heatmap</button>
+      <div class="accordion-content"></div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Crypto KI Tool – entwickelt mit 💡 und 💻</p>
+    <p>&copy; 2025 Crypto KI Tool</p>
   </footer>
 
   <script>
     const buttons = document.querySelectorAll(".accordion-btn");
+
     buttons.forEach(btn => {
-      btn.addEventListener("click", () => {
-        btn.classList.toggle("active");
+      btn.addEventListener("click", async () => {
         const content = btn.nextElementSibling;
-        if (content.style.maxHeight) {
-          content.style.maxHeight = null;
-        } else {
-          content.style.maxHeight = content.scrollHeight + "px";
+        btn.classList.toggle("active");
+
+        if (!content.dataset.loaded) {
+          const src = btn.dataset.src;
+          const type = btn.dataset.type;
+          const res = await fetch(src);
+          const data = await res.json();
+
+          if (type === "news") {
+            content.innerHTML = `<pre>${JSON.stringify(data, null, 2)}</pre>`;
+          }
+
+          if (type === "sentiment") {
+            content.innerHTML = Object.entries(data).map(([coin, info]) => `
+              <div class="card">
+                <h3>${coin}</h3>
+                <p>${info.gpt}</p>
+              </div>
+            `).join("");
+          }
+
+          if (type === "whales") {
+            content.innerHTML = data.map(entry => `
+              <div class="card">
+                <strong>${entry.amount} ${entry.asset}</strong> → ${entry.to}
+              </div>
+            `).join("");
+          }
+
+          if (type === "heatmap") {
+            content.innerHTML = `<div class="grid">` + data.map(coin => {
+              let cls = coin.change > 0.5 ? 'pos' : coin.change < -0.5 ? 'neg' : 'neu';
+              return `<div class="tile ${cls}">${coin.symbol.toUpperCase()}<br><small>${coin.change.toFixed(2)}%</small></div>`;
+            }).join("") + `</div>`;
+          }
+
+          content.dataset.loaded = true;
         }
+
+        content.style.maxHeight = content.style.maxHeight ? null : content.scrollHeight + "px";
       });
     });
   </script>
