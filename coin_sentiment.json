@@ -1,0 +1,10 @@
+{
+  "BTC": {
+    "news": ["BlackRock ETF genehmigt"],
+    "gpt": "Sentiment: bullish – institutionelle Nachfrage steigt"
+  },
+  "ETH": {
+    "news": ["SEC zögert bei Ethereum-Entscheidung"],
+    "gpt": "Sentiment: neutral – wenig Klarheit"
+  }
+}
