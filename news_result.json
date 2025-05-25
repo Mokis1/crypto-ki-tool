@@ -1,10 +1,10 @@
 {
-  "sentiment_raw": "Sentiment: bullish\nGrund: Die Nachrichten deuten auf wachsenden Optimismus im Markt hin, insbesondere aufgrund von ETF-Genehmigungen und verstärkter Akkumulation durch Whales.",
+  "sentiment_raw": "Sentiment: unknown",
   "titles": [
-    "BlackRock Ethereum ETF genehmigt",
-    "BTC Whales akkumulieren über 10.000 BTC",
-    "Coinbase bringt institutionelles Trading-Modul",
-    "Fed-Sitzung beruhigt Krypto-Markt",
-    "Tether druckt weitere 1 Milliarde USDT"
+    "Pakistan Earmarks 2,000 MW for Bitcoin Mining and AI Data Centers",
+    "Judge Overturns Key Convictions in $110M Mango Markets Crypto Case",
+    "7 Ways to Protect Yourself From Violent Crypto Attacks (Without a Shotgun)",
+    "Lyn Alden Just EXPOSED Her MicroStrategy and BITCOIN Plan",
+    "AI agents are poised to be crypto’s next major vulnerability"
   ]
 }
