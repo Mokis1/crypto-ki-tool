@@ -9,32 +9,44 @@
 <body>
   <header>
     <h1>🚀 Crypto KI Dashboard</h1>
-    <nav>
-      <ul>
-        <li><a href="gpt-news.html">🧠 GPT-Newsanalyse</a></li>
-        <li><a href="dashboard.html">📈 BTC/ETH Mini-Dashboard</a></li>
-        <li><a href="all-coins.html">📊 Coin-Dashboard (Top-Coins)</a></li>
-        <li><a href="whale.html">🐋 Whale-Tracking</a></li>
-        <!-- Weitere Module:
-        <li><a href="alerts.html">🔔 Alerts</a></li>
-        <li><a href="heatmap.html">🌡️ Heatmap</a></li>
-        -->
-      </ul>
-    </nav>
   </header>
 
   <main>
-    <section>
-      <h2>Willkommen auf deinem Crypto KI Dashboard</h2>
-      <p>
-        Hier findest du alle Tools, die dir helfen, den Krypto-Markt besser zu verstehen – unterstützt durch künstliche Intelligenz. 
-        Nutze die Navigation oben, um zwischen Modulen wie GPT-Newsanalyse, Whale-Tracking und Coin-Dashboards zu wechseln.
-      </p>
+    <section class="accordion">
+      <button class="accordion-btn">🧠 GPT-Newsanalyse</button>
+      <div class="accordion-content">
+        <iframe src="gpt-news.html" width="100%" height="400" frameborder="0"></iframe>
+      </div>
+
+      <button class="accordion-btn">📊 Coin-Dashboard (Top-Coins)</button>
+      <div class="accordion-content">
+        <iframe src="all-coins.html" width="100%" height="500" frameborder="0"></iframe>
+      </div>
+
+      <button class="accordion-btn">🐋 Whale-Tracking</button>
+      <div class="accordion-content">
+        <iframe src="whale.html" width="100%" height="400" frameborder="0"></iframe>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Crypto KI Tool – entwickelt mit 💡 und 💻</p>
+    <p>&copy; 2025 Crypto KI Tool</p>
   </footer>
+
+  <script>
+    const buttons = document.querySelectorAll(".accordion-btn");
+    buttons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        btn.classList.toggle("active");
+        const content = btn.nextElementSibling;
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    });
+  </script>
 </body>
 </html>
