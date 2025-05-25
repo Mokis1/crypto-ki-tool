@@ -2,83 +2,69 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Crypto KI Dashboard</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body { background: #111; color: #eee; font-family: sans-serif; margin: 0; padding: 0; }
+    h1 { text-align: center; padding: 20px; }
+    .section { background: #00ffe0; color: black; padding: 10px 20px; font-weight: bold; cursor: pointer; margin: 20px; border-radius: 5px; }
+    .content { background: #222; padding: 20px; margin: 0 20px 20px 20px; border-radius: 5px; display: none; }
+    pre { white-space: pre-wrap; word-wrap: break-word; }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>🚀 Crypto KI Dashboard</h1>
-  </header>
+  <h1>🚀 Crypto KI Dashboard</h1>
 
-  <main>
-    <section class="accordion">
-      <button class="accordion-btn" data-src="gpt-news.json" data-type="news">🧠 GPT-Newsanalyse</button>
-      <div class="accordion-content"></div>
+  <div class="section" onclick="toggle('news')">🧠 GPT-Newsanalyse</div>
+  <div id="news" class="content"></div>
 
-      <button class="accordion-btn" data-src="coin_sentiment.json" data-type="sentiment">🧠 GPT pro Coin</button>
-      <div class="accordion-content"></div>
+  <div class="section" onclick="toggle('coin')">🧠 GPT pro Coin</div>
+  <div id="coin" class="content"></div>
 
-      <button class="accordion-btn" data-src="whale_data.json" data-type="whales">🐋 Whale-Tracking</button>
-      <div class="accordion-content"></div>
+  <div class="section" onclick="toggle('whales')">🔎 Whale-Tracking</div>
+  <div id="whales" class="content"></div>
 
-      <button class="accordion-btn" data-src="heatmap_data.json" data-type="heatmap">🌡️ Coin-Heatmap</button>
-      <div class="accordion-content"></div>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Crypto KI Tool</p>
-  </footer>
+  <div class="section" onclick="toggle('heatmap')">🔋 Coin-Heatmap</div>
+  <div id="heatmap" class="content"></div>
 
   <script>
-    const buttons = document.querySelectorAll(".accordion-btn");
+    function toggle(id) {
+      const el = document.getElementById(id);
+      el.style.display = el.style.display === 'block' ? 'none' : 'block';
+    }
 
-    buttons.forEach(btn => {
-      btn.addEventListener("click", async () => {
-        const content = btn.nextElementSibling;
-        btn.classList.toggle("active");
-
-        if (!content.dataset.loaded) {
-          const src = btn.dataset.src;
-          const type = btn.dataset.type;
-          const res = await fetch(src);
-          const data = await res.json();
-
-          if (type === "news") {
-            content.innerHTML = `<pre>${JSON.stringify(data, null, 2)}</pre>`;
-          }
-
-          if (type === "sentiment") {
-            content.innerHTML = Object.entries(data).map(([coin, info]) => `
-              <div class="card">
-                <h3>${coin}</h3>
-                <p>${info.gpt}</p>
-              </div>
-            `).join("");
-          }
-
-          if (type === "whales") {
-            content.innerHTML = data.map(entry => `
-              <div class="card">
-                <strong>${entry.amount} ${entry.asset}</strong> → ${entry.to}
-              </div>
-            `).join("");
-          }
-
-          if (type === "heatmap") {
-            content.innerHTML = `<div class="grid">` + data.map(coin => {
-              let cls = coin.change > 0.5 ? 'pos' : coin.change < -0.5 ? 'neg' : 'neu';
-              return `<div class="tile ${cls}">${coin.symbol.toUpperCase()}<br><small>${coin.change.toFixed(2)}%</small></div>`;
-            }).join("") + `</div>`;
-          }
-
-          content.dataset.loaded = true;
-        }
-
-        content.style.maxHeight = content.style.maxHeight ? null : content.scrollHeight + "px";
+    fetch('gpt-news.json')
+      .then(r => r.json())
+      .then(data => {
+        document.getElementById('news').innerHTML = `<pre>${JSON.stringify(data, null, 2)}</pre>`;
       });
-    });
+
+    fetch('coin_sentiment.json')
+      .then(r => r.json())
+      .then(data => {
+        let html = '';
+        for (let coin in data) {
+          html += `<b>${coin}</b><br>${data[coin].gpt}<br><br>`;
+        }
+        document.getElementById('coin').innerHTML = html;
+      });
+
+    fetch('whale_data.json')
+      .then(r => r.json())
+      .then(data => {
+        let html = data.map(w => `<b>${w.amount} ${w.coin}</b> → ${w.to}`).join('<br>');
+        document.getElementById('whales').innerHTML = html;
+      });
+
+    fetch('heatmap_data.json')
+      .then(r => r.json())
+      .then(data => {
+        let html = '';
+        for (let coin in data) {
+          html += `<b>${coin}</b>: ${data[coin]}%<br>`;
+        }
+        document.getElementById('heatmap').innerHTML = html;
+      });
   </script>
 </body>
 </html>
