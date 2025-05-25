@@ -1,69 +1,55 @@
-/* style.css */
-
 body {
-  font-family: Arial, sans-serif;
-  background: #121212;
-  color: #f0f0f0;
+  background-color: #111;
+  color: #eee;
+  font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
 }
 
-header {
-  background: #1f1f1f;
-  padding: 20px;
-  text-align: center;
-  border-bottom: 1px solid #333;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 2rem;
-}
-
-main {
-  padding: 30px;
-  max-width: 1000px;
-  margin: auto;
-}
-
-footer {
+h1 {
   text-align: center;
   padding: 20px;
-  background: #1f1f1f;
-  border-top: 1px solid #333;
-  margin-top: 40px;
+  background-color: #00ffe0;
+  color: #111;
+  margin-bottom: 0;
+  border-bottom: 4px solid #0cf;
 }
 
-.accordion {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.accordion-btn {
-  background-color: #1e1e1e;
-  color: #00ffcc;
-  cursor: pointer;
-  padding: 15px;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 1.1rem;
+.section {
+  background: #00ffe0;
+  color: black;
+  padding: 10px 20px;
   font-weight: bold;
+  cursor: pointer;
+  margin: 20px;
   border-radius: 5px;
-  transition: background 0.2s ease;
+  transition: background 0.3s ease;
 }
 
-.accordion-btn:hover,
-.accordion-btn.active {
-  background-color: #00ffcc;
-  color: #000;
+.section:hover {
+  background: #0cf;
 }
 
-.accordion-content {
-  background-color: #2a2a2a;
-  overflow: hidden;
-  transition: max-height 0.3s ease-out;
-  max-height: 0;
+.content {
+  background: #222;
+  padding: 20px;
+  margin: -10px 20px 20px 20px;
   border-radius: 5px;
+  display: none;
+  box-shadow: 0 0 8px rgba(0,255,255,0.3);
+}
+
+b {
+  color: #0ff;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  color: #eee;
+  font-size: 15px;
+  background: #000;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: auto;
 }
